@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 // mongo db connection
 
-const url =`mongodb+srv://prasanna:${process.env.MONGOPASSWORD}@cluster0.nx947.mongodb.net/myFirstDatabase`;
+const url =`mongodb+srv://prasanna:prasanna98@cluster0.nx947.mongodb.net/myFirstDatabase`;
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
 const con = mongoose.connection;
 con.on("open", () => console.log("MongoDB is connected"));
