@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (request, respone) => {
-  respone.send("Welcome to Node app!!!! Hi Guys");
+  respone.send("Password reseter app is running...");
 });
 
 app.use("/users", userRouter);
