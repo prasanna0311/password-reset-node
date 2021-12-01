@@ -27,10 +27,14 @@ router.route("/").get(async (request, respone) => {
   respone.send(users);
 });
 
+router.route("/test").get(async (request, respone) => {
+  respone.send("Password reseter app is running... prasanna");
+});
+
 // find user by id
 router
   .route("/:id")
-  .get(nice, async (request, respone) => {
+  .get( async (request, respone) => {
     const { id } = request.params;
     const user = await Users.findById(id);
     respone.send(user);
